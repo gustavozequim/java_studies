@@ -19,7 +19,7 @@
 | 1.1  | Lógica básica (condições, laços)      | Escreva um programa que valida se um número é par. | ✅     |
 | 1.2  | Variáveis e tipos em Java             | Crie variáveis para usuário (nome, idade, altura).| ✅     |
 | 1.3  | Controle (if, switch)                 | Faça um menu de opções simples.                    | ✅      |
-| 1.4  | Loops (for, while)                    | Gere a tabuada de um número.                      | ⬜     |
+| 1.4  | Loops (for, while)                    | Gere a tabuada de um número.                      | ✅     |
 | 1.5  | Funções e métodos                     | Crie uma função que calcula fatorial.             | ⬜     |
 | 1.6  | Classes e objetos                     | Modele uma classe `Pessoa` com atributos.         | ⬜     |
 | 1.7  | Revisão + exercícios                  | Monte todos os exercícios anteriores num projeto. | ⬜     |
