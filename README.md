@@ -23,8 +23,8 @@
 | 1.5  | Funções e métodos                     | Crie uma função que calcula fatorial.             | ✅     |
 | 1.6  | Classes e objetos                     | Modele uma classe `Pessoa` com atributos.         | ✅     |
 | 1.7  | Revisão + exercícios                  | Monte todos os exercícios anteriores num projeto. | ✅     |
-| 2.1  | POO: herança e polimorfismo           | Crie classes `Animal`, `Cachorro`, `Gato`.        | 🟩     |
-| 2.2  | Tratamento de exceções                | Implemente tratamento ao dividir por zero.        | ⬜     |
+| 2.1  | POO: herança e polimorfismo           | Crie classes `Animal`, `Cachorro`, `Gato`.        | ✅     |
+| 2.2  | Tratamento de exceções                | Implemente tratamento ao dividir por zero.        | 🟩     |
 | 2.3  | Coleções (List, Set, Map)             | Armazene contatos de telefone usando Map.         | ⬜     |
 | 2.4  | Java 8+: lambdas e streams            | Filtre uma lista de números pares.                | ⬜     |
 | 2.5  | CRUD em memória                       | Crie uma lista simulando CRUD (add, edit, del).  | ⬜     |
