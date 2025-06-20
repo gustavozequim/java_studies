@@ -26,8 +26,8 @@
 | 2.1  | POO: herança e polimorfismo           | Crie classes `Animal`, `Cachorro`, `Gato`.        | ✅     |
 | 2.2  | Tratamento de exceções                | Implemente tratamento ao dividir por zero.        | ✅     |
 | 2.3  | Coleções (List, Set, Map)             | Armazene contatos de telefone usando Map.         | ✅     |
-| 2.4  | Java 8+: lambdas e streams            | Filtre uma lista de números pares.                | 🟩     |
-| 2.5  | CRUD em memória                       | Crie uma lista simulando CRUD (add, edit, del).  | ⬜     |
+| 2.4  | Java 8+: lambdas e streams            | Filtre uma lista de números pares.                | ✅     |
+| 2.5  | CRUD em memória                       | Crie uma lista simulando CRUD (add, edit, del).  | 🟩     |
 | 2.6  | Projeto: gerenciador de tarefas       | App console com tarefas + status (feito/não).     | ⬜     |
 | 2.7  | Revisão geral + Git básico            | Suba o projeto no GitHub com readme.              | ⬜     |
 
