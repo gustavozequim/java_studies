@@ -6,9 +6,9 @@ public class Crud_em_memoria {
     public static void main(String[] args) {
         Scanner cmndLine = new Scanner (System.in);
         Map<String, String> livros = new HashMap<>();
-        livros.put("JRR Tolkien", "O Senhor dos Aneis: Sociedade do Anel");
-        livros.put("JRR Tolkien", "O Senhor dos Aneis: As Duas Torres");
-        livros.put("JRR Tolkien", "O Senhor dos Aneis: O Retorno do Rei");
+        livros.put("Sociedade do Anel", "JRR Tolkien");
+        livros.put("As Duas Torres", "JRR Tolkien");
+        livros.put("O Retorno do Rei", "JRR Tolkien");
         System.out.println("Segue abaixo as opcoes, o que deseja fazer?:");
         System.out.println("""
         [1] Listar livros
@@ -21,7 +21,7 @@ public class Crud_em_memoria {
         
         switch (opcao) {
         case 1:
-            livros.forEach((autor, titulo) -> System.out.println("Autor: " + autor + ", Titulo: " + titulo + "\n"));
+            livros.forEach((titulo, autor) -> System.out.println("Autor: " + autor + ", Titulo: " + titulo + "\n"));
             break;
         case 2:
             System.out.print("\nOK! Vamos la.\n");
@@ -30,13 +30,23 @@ public class Crud_em_memoria {
             String novoLivroTit = cmndLine.nextLine();
             System.out.println("Autor: ");
             String novoLivroAut = cmndLine.nextLine();
-            livros.put(novoLivroAut, novoLivroTit);
+            livros.put(novoLivroTit, novoLivroAut);
             System.out.println("\nNovo livro adicionado: " + novoLivroTit + ".\n");
-            livros.forEach((autor, titulo) -> System.out.println("Autor: " + autor + ", Titulo: " + titulo));
+            livros.forEach((titulo, autor) -> System.out.println("Autor: " + autor + ", Titulo: " + titulo));
             break;
 
         case 3:
             System.out.print("\nDigite o livro que deseja editar\n");
+            cmndLine.nextLine();
+            System.out.println("O que deseja editar?:");
+            String editLivro = cmndLine.nextLine();
+            if (editLivro.toLowerCase() == "titulo"){
+                String novoTitulo = cmndLine.nextLine();
+                livros.put(editLivro, novoTitulo);
+            }
+            else{
+
+            }
             break;
 
         default:
