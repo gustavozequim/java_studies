@@ -21,9 +21,7 @@ public class Crud_em_memoria {
         
         switch (opcao) {
         case 1:
-            livros.entrySet().forEach(entry -> {
-            System.out.println("Autor: " + entry.getKey() + ", Titulo: " + entry.getValue());
-        });
+            livros.forEach((autor, titulo) -> System.out.println("Autor: " + autor + ", Titulo: " + titulo + "\n"));
             break;
         case 2:
             System.out.print("\nOK! Vamos la.\n");
@@ -33,14 +31,12 @@ public class Crud_em_memoria {
             System.out.println("Autor: ");
             String novoLivroAut = cmndLine.nextLine();
             livros.put(novoLivroAut, novoLivroTit);
-
-            livros.entrySet().forEach(entry -> {
-            System.out.println("Autor: " + entry.getKey() + ", Titulo: " + entry.getValue());
-        });
+            System.out.println("\nNovo livro adicionado: " + novoLivroTit + ".\n");
+            livros.forEach((autor, titulo) -> System.out.println("Autor: " + autor + ", Titulo: " + titulo));
             break;
 
         case 3:
-            System.out.print("\nOpção Produtos Selecionado\n");
+            System.out.print("\nDigite o livro que deseja editar\n");
             break;
 
         default:
