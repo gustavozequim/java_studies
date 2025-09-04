@@ -42,8 +42,8 @@ public class Crud_em_memoria {
                 cmndLine.nextLine();
                 String editLivro = cmndLine.nextLine();
                 System.out.println("O que deseja editar? Digite T para titulo e A para autor:");
-                cmndLine.nextLine();
                 String opEdit = cmndLine.nextLine();
+
                 if (opEdit.toLowerCase() == "a"){
                     String novoAutor = cmndLine.nextLine();
                     livros.put(editLivro, novoAutor);
@@ -57,6 +57,9 @@ public class Crud_em_memoria {
                     livros.put(novoTitulo, aut);
                     System.out.println("Lista atualizada:");
                     livros.forEach((titulo, autor) -> System.out.println("Autor: " + autor + ", Titulo: " + titulo));
+                }
+                else{
+                    System.out.println("Opção inválida!");
                 }
                 continue;
 
