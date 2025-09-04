@@ -42,25 +42,28 @@ public class Crud_em_memoria {
                 cmndLine.nextLine();
                 String editLivro = cmndLine.nextLine();
                 System.out.println("O que deseja editar? Digite T para titulo e A para autor:");
-                String opEdit = cmndLine.nextLine();
+                String opEdit = cmndLine.nextLine().toLowerCase();
 
-                if (opEdit.toLowerCase() == "a"){
-                    String novoAutor = cmndLine.nextLine();
-                    livros.put(editLivro, novoAutor);
-                }
-                if (opEdit.toLowerCase() == "t"){
-                    String aut = livros.get(editLivro);
-                    livros.remove(editLivro);
-                    System.out.println(aut);
-                    System.out.println("Digite o novo titulo:");
-                    String novoTitulo = cmndLine.nextLine();
-                    livros.put(novoTitulo, aut);
-                    System.out.println("Lista atualizada:");
-                    livros.forEach((titulo, autor) -> System.out.println("Autor: " + autor + ", Titulo: " + titulo));
-                }
-                else{
-                    System.out.println("Opção inválida!");
-                }
+                switch (opEdit) {
+                    case "a":
+                    System.out.println("Digite o novo autor:");
+                        String novoAutor = cmndLine.nextLine();
+                        livros.put(editLivro, novoAutor);
+                        System.out.println("Lista atualizada:");
+                        livros.forEach((titulo, autor) -> System.out.println("Autor: " + autor + ", Titulo: " + titulo));
+                        break;
+                    case "t":
+                        String aut = livros.get(editLivro);
+                        livros.remove(editLivro);
+                        System.out.println("Digite o novo titulo:");
+                        String novoTitulo = cmndLine.nextLine();
+                        livros.put(novoTitulo, aut);
+                        System.out.println("Lista atualizada:");
+                        livros.forEach((titulo, autor) -> System.out.println("Autor: " + autor + ", Titulo: " + titulo));
+                    default:
+                        System.out.println("Opção inválida!");
+                            break;
+                    }
                 continue;
 
             case 4:
